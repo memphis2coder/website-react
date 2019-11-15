@@ -1,20 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./nav.css";
 
 function Nav() {
   return (
     <nav>
       <h3>
-        <li
-          className="logo"
-          style={{ textdecoration: "none", listStyle: "none" }}
+        <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            listStyle: "none"
+          }}
         >
-          LOGO
-        </li>
+          <li className="logo">LOGO</li>
+        </Link>
       </h3>
+
       <ul className="nav__links">
-        <li>About</li>
-        <li>Weather</li>
+        <Link to="/about" style={{ textDecoration: "none" }}>
+          <li>About</li>
+        </Link>
+        <Link
+          to="/weather"
+          style={{
+            textDecoration: "none",
+            marginLeft: "20%"
+          }}
+        >
+          <li>Weather</li>
+        </Link>
       </ul>
     </nav>
   );

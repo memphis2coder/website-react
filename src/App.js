@@ -16,20 +16,20 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <Switch>
-          <div className="container">
-            <Route path="/" component={Home} />
+        <div className="container">
+          <Switch>
+            <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/weather" component={Weather} />
-          </div>
-        </Switch>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
 }
 
 const Home = () => (
-  <div>
+  <div className="container">
     <h1>Home Page</h1>
   </div>
 );
