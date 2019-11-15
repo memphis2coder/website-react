@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: lightcyan;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__links li {
+  margin-left: 20%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav__links li:first-child {
+  margin-left: 0;
+}
